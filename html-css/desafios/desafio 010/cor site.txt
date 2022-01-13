@@ -1,0 +1,5 @@
+cor 1  #83E1AD
+cor 2  #3DDC84
+cor 3  #2FA866
+cor 4  #1A5C37
+cor 5  #355C47
