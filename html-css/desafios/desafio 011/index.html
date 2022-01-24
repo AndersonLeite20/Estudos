@@ -4,14 +4,35 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>imagem de fundo</title>
+     <title>centalizando astronauta</title>
+<style>
+    body {
+         background-image: url(espaco.jpg);
+         background-attachment: fixed;
+         background-position: center center;
+         background-size: cover;
+    }
+    article {
+         background-size: 50% 50%;
+         background-position: center center;
+    }
+    img {
+         background-size: 50% 50%;
+         position: fixed;
+         height: 230px;
+         width: 120px; 
+         top: 25%;
+         left: 45%; 
+         transform: translate(-50% -50);
+    }
+    
+</style>
 </head>
 <body>
-<main>
-     <figure>
-          <img src="espaco.jpg" alt="espaço">
-          <img src="astronauta.png" alt="astronalta">
-     </figure>
-</main>
+     <sectiom>
+          <article>
+               <img src="astronauta.png" alt="astronauta">
+          </article >
+     </sectiom>
 </body>
 </html>

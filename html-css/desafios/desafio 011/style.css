@@ -1,9 +1,0 @@
-@charset "utf=8";
-body{
-     background-image: 100%;
-     background-color: rgb(26, 26, 92);
-}
-container figure{
-     align-items: center;
-     width: 240px;
-}
