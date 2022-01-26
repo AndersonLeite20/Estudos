@@ -1,4 +1,5 @@
 @charset "utf-8";
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2? family= Metamorphous & family= Passion+One & family= Sriracha & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Metamorphous & family= Sriracha & display=swap');
 :root {
@@ -6,6 +7,8 @@
      --font2: 'Passion One', cursiva;
      --font3: 'Sriracha', cursiva;
 }
+=======
+>>>>>>> main
 *{
      margin: 0px;
      padding: 0px;
@@ -13,8 +16,11 @@
 html, body {
      background-color: rgba(45, 45, 54, 0.377);
      min-height: 100vh;
+<<<<<<< HEAD
      font-family: var(--font1);
      font-size: 1em;
+=======
+>>>>>>> main
 }
 header {
      background-color: black;
@@ -24,8 +30,11 @@ header {
 header > h1 {
      padding-top:50px;
      font-variant: small-caps;
+<<<<<<< HEAD
      font-family: var(--font2);
      font-size: 10vw;
+=======
+>>>>>>> main
 }
 header > p {
      padding-bottom: 50px;
@@ -43,8 +52,11 @@ section {
      padding-bottom: 10vh;
      line-height: 2em;
      padding-left: 30px;
+<<<<<<< HEAD
      font-family: var(--font3);
      font-size: 3.5vw;
+=======
+>>>>>>> main
 }
 section.normal {
      background-color: white;
@@ -56,9 +68,13 @@ section.imagen {
 }
 section.imagen > p {
      background-color: rgba(0, 0, 0, 0.454);
+<<<<<<< HEAD
      display: inline-block;
      padding: 5px;
      border-radius: 15px;
+=======
+     width: 400px;
+>>>>>>> main
 }
 footer {
      background-color: black;
