@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>tabelas</title>
+     <style>
+          body {
+               font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          table {
+             border-collapse: collapse;
+             width: 300px;
+          }
+          td {
+               text-align: center;
+               border: 1px solid black;
+               padding: 10px;
+          }
+
+     </style>
+</head>
+<body>
+     <h1>mescagem de celulas</h1>
+     <div>
+          <table>
+               <caption>teste 1</caption>
+               <tr>
+                    <td>A</td>
+                    <td colspan="2">B</td>
+                    <td>s</td>
+                    <td rowspan="4">q</td>
+          
+               </tr>
+               <tr>
+                    <td rowspan="2">D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>g</td>
+          
+               </tr>
+               <tr>
+          
+                    <td>H</td>
+                    <td>I</td>
+                    <td>w</td>
+          
+               </tr>
+               <tr>
+                    <td colspan="4">f</td>
+          
+               </tr>
+          </table>
+     </div>
+     <div>
+          <table>
+               <caption>teste 2</caption>
+               <tr>
+                    <td colspan="4">A</td>
+               </tr>
+               <tr>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td rowspan="4">H</td>
+               </tr>
+               <tr>
+                  
+                    <td>J</td>
+                    <td>K</td>
+                    
+               </tr>
+               <tr>
+                    <td colspan="3">M</td>
+                   
+                    
+               </tr>
+          </table>
+     </div>
+</body>
+</html>
