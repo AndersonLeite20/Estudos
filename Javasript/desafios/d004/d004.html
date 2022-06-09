@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>calculando o troco</h1>
+     <button onclick="clikar()">comprar produto</button>
+     <script>
+          function clikar() {
+          let produto = window.prompt('Que produto voçê esta comprando?') 
+          let valor = window.prompt('Quanto custa o produto que voçê está comprando?')
+          let pgmt = window.prompt('Qual o valor que voçê deu para pagar?')
+          let troco = (pgmt - valor)     
+          let r = window.alert(`voçe comprou um ${produto} que custou R$ ${valor}, deu R$ ${pgmt} é vai receber ${troco}' de troco volte sempre !`)
+          }
+     </script>
+</body>
+</html>

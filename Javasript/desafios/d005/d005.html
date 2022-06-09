@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     body {
+          font: 15pt arial;
+     }
+     div {
+          background-color: rgba(0, 255, 255, 0.227);
+          display: flex;
+          flex-direction: column;
+          line-height: 0px;
+     }
+</style>
+<body>
+     <h1>Comversor de medidas</h1>
+     <button onclick="clikar()">comverter</button>
+     <p>clique no botao acima para iniciar.</p> 
+     <div id="res">
+
+     </div>
+     <script>
+          function clikar() {
+               let dis =  Number(window.prompt('Digite uma distãncia em metros (m)'))
+               
+               let des = document.querySelector('div#res')
+               des.innerHTML = `<p><strong>A distância de ${dis} metros, corresponde a</strong></p>`
+               des.innerHTML += `<p>${dis.toFixed(6)} quilõmetros (km)</p>`
+               des.innerHTML += `<p>${dis.toFixed(5)} hectômetros (Hm)</p>`
+               des.innerHTML += `<p>${dis.toFixed(4)} decãmetros(Dam)</p>`
+               des.innerHTML += `<p>${dis.toFixed(3)} decimetros (dm)</p>`
+               des.innerHTML += `<p>${dis.toFixed(2)} cemtimetros (cm)</p>`
+               des.innerHTML += `<p>${dis.toFixed(1)} milimetros (mm)</p>`
+          }
+     </script>
+</body>
+</html>

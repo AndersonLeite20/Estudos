@@ -1,0 +1,17 @@
+@charset "utf-8";
+body {
+     background-color: rgb(81, 150, 199);
+}
+h1 {
+     color: white;
+     text-align: center;
+}
+div {
+     background-color: white;
+     width: 65%;
+     height: 50%;
+     display: flex;
+     margin: auto;
+     padding: 10px;
+     border-radius: 15px;
+}

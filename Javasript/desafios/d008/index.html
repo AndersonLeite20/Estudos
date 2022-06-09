@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>desconto</title>
+</head>
+<style>
+     button {
+          width: 200px;
+          height: 75px;
+     }
+     div {
+          background-color: rgba(150, 206, 206, 0.855);
+     }
+</style>
+<body>
+     <H2>CALCUAR DESCONTO</H2>
+     <BUtton onclick="cliar()">Desconto de 10%</BUtton>
+     <p>cique no botão acima para iniciar.</p>
+     <div id="resultado">
+
+     </div> 
+     <script>
+          function cliar() {
+               let produto = window.prompt('Qual é o produto que voçê esta comprando?')
+               let preco = window.prompt (`Qual é o preço do ${produto}`)
+               let res = document.querySelector('#resultado')
+               let fim = (preco*10)
+               res.innerHTML += `<p><strong>Calculando desconto de 10% para 
+               ${produto}.</strong></p>`
+               let divi = (preco/100)
+               let resto = (preco - divi )
+               let pagar = (preco - resto)
+               res.innerHTML += `<p>O preço original era R$ ${preco}</p>`
+               res.innerHTML += `voçê acaba de ganhar R$ ${resto} de desconto (10%)`
+               res.innerHTML += `No fim voçê vai pagar R$ ${pagar} pelo ${produto}`
+          }
+     </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>comverssor</title>
+</head>
+<body>
+     <h2>COMVERSSOR DE TEMPERATURA</h2>
+     <button onclick="clikar()">Comverter</button>
+     <p>Clique no botão para iniciar:</p>
+     <div id="res"> 
+
+     </div>  
+     <script>
+          function clikar() {
+               let va = Number(window.prompt('Digite uma temperatura em C(Celcius)')) 
+
+               let re = document.getElementById('div#res')
+               des.innerHTML = `<p><strong>A distância de ${dis} metros, corresponde a</strong></p>`
+               re.innerHTML = `<p>${val} K (Kelvin)</p>`
+               re.innerHTML = `<p>${val} F (Fahrenheit)</p>`
+          }
+     </script>
+</body>
+</html>

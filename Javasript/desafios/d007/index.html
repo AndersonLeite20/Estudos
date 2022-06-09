@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>comverssor monetário</title>
+</head>
+<style>
+     button {
+          width: 150px;
+          height: 75px;
+     }
+</style>
+<body>
+     <h2>COMVERSSOR R$ - US$</h2>
+     <button onclick="clikar()">Comverter</button>
+     <p>Clique no botão acima para começar.</p>
+     <div id="asd">
+
+     </div>
+     <script>
+          function clikar() {
+               let cota = window.prompt('Antes de mais nada. Quanto esta a cotaçáo do dolar agora?')
+               let pos = window.prompt('Q!uantos R$ voçé tem na carteira?')
+
+               let esc = document.querySelector('div#asd')
+               let fim = (cota/pos)
+               esc.innerHTML = `<p>O valor R$${cota} vale R$${fim}</p>`
+          }
+     </script>
+</body>
+</html>

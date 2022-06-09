@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>condiçôes</title>
+</head>
+<body>
+     <h1>Nacionalidade</h1>
+     <p>Em qual país voçê vive?</p>
+     <input type="text" name="nca" id="nca" required>
+     <input type="button" value="verificar" onclick="ver()">
+     <div id="dv">
+
+     </div>  
+     <script>  
+          function ver() {
+               var pais = window.document.querySelector('#nca')
+               var dd = window.document.querySelector('#dv')
+               if (pais.value == 'brasil') {
+                    dd.innerHTML = `<p>Voçê vive em é Brasileiro</p>`
+               } else {
+                    dd.innerHTML = `<p>Voçê vive em  é estrangeiro</p>`
+               }
+          }
+     </script>
+</body>
+</html>
